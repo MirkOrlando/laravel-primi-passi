@@ -14,13 +14,22 @@
             box-sizing: border-box;
         }
 
+        body {
+            font-family: sans-serif;
+        }
+
         a {
             color: unset;
             text-decoration: unset;
         }
 
         .container {
-            max-width: 1400;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .container-sm {
+            max-width: 800px;
             margin: auto;
         }
 
@@ -28,6 +37,10 @@
 
         .m-0 {
             margin: 0;
+        }
+
+        .text-center {
+            text-align: center;
         }
 
         .d-flex {
@@ -57,14 +70,17 @@
 
         /* main */
 
+        main {
+            min-height: calc(100vh - 50px - 50px);
+        }
+
         main .jumbotron {
             /* 1016 */
             background-image: url('https://picsum.photos/id/1045/1500');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            min-height: 200px;
-            margin-bottom: 1.25rem;
+            height: 200px;
         }
 
         main .jumbotron h1 {
@@ -72,8 +88,19 @@
             color: white;
             background: linear-gradient(130deg, #a05f5f, #a05f5f 70%, transparent 70%);
             padding: 0.5rem;
-            width: 542px;
+            width: 600px;
             margin-bottom: -1.25rem;
+        }
+
+        main .content {
+            padding: 2rem 0;
+        }
+
+        /* footer */
+        footer {
+            padding: 1rem 0;
+            background-color: grey;
+            color: white;
         }
     </style>
 </head>
@@ -94,8 +121,15 @@
                 <h1>My Site Business</h1>
             </div>
         </div>
+        <div class="content">
+            <div class="container-sm">
+                <?= $content ?>
+            </div>
+        </div>
     </main>
-    <footer>SITE FOOTER HERE</footer>
+    <footer class="text-center">
+        Copyright &copy;2022
+    </footer>
 </body>
 
 </html>
