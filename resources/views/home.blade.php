@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primi-passi</title>
     <style>
+        /* common */
         * {
             padding: 0;
             margin: 0;
@@ -23,6 +24,21 @@
             margin: auto;
         }
 
+        /* utilities */
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-end {
+            align-items: flex-end;
+        }
+
+        /* header */
         nav {
             text-align: center;
             padding: 1rem;
@@ -39,13 +55,25 @@
             color: #d52a2a;
         }
 
+        /* main */
+
         main .jumbotron {
             /* 1016 */
             background-image: url('https://picsum.photos/id/1045/1500');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            min-height: 50vh;
+            min-height: 200px;
+            margin-bottom: 1.25rem;
+        }
+
+        main .jumbotron h1 {
+            font-size: 3rem;
+            color: white;
+            background: linear-gradient(130deg, #a05f5f, #a05f5f 70%, transparent 70%);
+            padding: 0.5rem;
+            width: 542px;
+            margin-bottom: -1.25rem;
         }
     </style>
 </head>
@@ -61,9 +89,9 @@
         </div>
     </header>
     <main>
-        <div class="jumbotron">
-            <div class="container">
-                <h1>My Site</h1>
+        <div class="jumbotron d-flex align-items-end">
+            <div class="container m-0">
+                <h1>My Site Business</h1>
             </div>
         </div>
     </main>
