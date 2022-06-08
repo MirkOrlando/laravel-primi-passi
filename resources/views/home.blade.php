@@ -110,8 +110,7 @@
         <div class="container">
             <nav>
                 <a href="/">Home</a>
-                <a href="/shop">Shop</a>
-                <a href="/about-us">About Us</a>
+                <a href="/courses">Courses</a>
             </nav>
         </div>
     </header>

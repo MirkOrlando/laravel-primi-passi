@@ -88,7 +88,7 @@
             color: white;
             background: linear-gradient(130deg, #a05f5f, #a05f5f 70%, transparent 70%);
             padding: 0.5rem;
-            width: 600px;
+            width: 320px;
             margin-bottom: -1.25rem;
         }
 
@@ -110,15 +110,14 @@
         <div class="container">
             <nav>
                 <a href="/">Home</a>
-                <a href="/shop">Shop</a>
-                <a href="/about-us">About Us</a>
+                <a href="/courses">Courses</a>
             </nav>
         </div>
     </header>
     <main>
         <div class="jumbotron d-flex align-items-end">
             <div class="container m-0">
-                <h1>My Shop</h1>
+                <h1>Courses</h1>
             </div>
         </div>
     </main>
