@@ -51,15 +51,6 @@
             align-items: flex-end;
         }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .col-3 {
-            width: calc(100%/3);
-        }
-
         /* header */
         nav {
             text-align: center;
@@ -97,11 +88,11 @@
             color: white;
             background: linear-gradient(130deg, #a05f5f, #a05f5f 70%, transparent 70%);
             padding: 0.5rem;
-            width: 320px;
+            width: 360px;
             margin-bottom: -1.25rem;
         }
 
-        main .courses {
+        main .content {
             padding: 2rem 0;
         }
 
@@ -126,18 +117,7 @@
     <main>
         <div class="jumbotron d-flex align-items-end">
             <div class="container m-0">
-                <h1>Courses</h1>
-            </div>
-        </div>
-        <div class="courses">
-            <div class="container-sm">
-                <div class="row">
-                    @foreach ($courses as $course)
-                    <div class="col-3 text-center">
-                        <h2>{{$course}}</h2>
-                    </div>
-                    @endforeach
-                </div>
+                <h1>Details #{{$id}}</h1>
             </div>
         </div>
     </main>

@@ -20,19 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/courses', function () {
-    $courses = [
-        ['type' => 'cooking', 'title' => 'Learn Carbonara'],
-        ['type' => 'bartender', 'title' => 'Learn Drinks'],
-        ['type' => 'waiter', 'title' => 'Learn Table Service']
-    ];
+    $courses = ['Learn Carbonara', 'Learn Drinks', 'Learn Table Service'];
     return view('courses', compact('courses'));
 });
 
-/* Route::get('/courses', function () {
-    $courses = [
-        ['type' => 'cooking', 'title' => 'Learn Carbonara'],
-        ['type' => 'bartender', 'title' => 'Learn Drinks'],
-        ['type' => 'waiter', 'title' => 'Learn Table Service']
-    ];
-    return view('courses', compact($courses));
-}); */
+Route::get('/courses/{id}', function ($id) {
+
+    return view('details', ['id' => $id]);
+});
