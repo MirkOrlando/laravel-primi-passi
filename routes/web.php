@@ -18,3 +18,8 @@ Route::get('/', function () {
     $content = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta incidunt necessitatibus doloribus ipsam architecto, nostrum sunt aut eligendi, excepturi itaque veniam dignissimos quis laudantium repellat natus molestias vel. Eaque eos quis, dolore, ipsum vitae ipsa exercitationem sequi adipisci a id voluptatem consequuntur sunt deserunt inventore saepe repellendus? Itaque consequuntur aliquam animi impedit, maiores similique expedita soluta, quaerat voluptatibus dicta temporibus eos dolorem! Quaerat debitis exercitationem quam maxime cumque quibusdam odio ab ullam voluptas rem dolor tempore, officiis voluptatum laudantium veniam consequatur cum molestiae, explicabo eius excepturi maiores iusto quod. Cumque et in porro impedit aliquam odit. Atque dolores expedita voluptatum.</p>";
     return view('home', compact('content'));
 });
+
+Route::get('/shop', function () {
+    //$navItems = ['Home', 'Shop', 'About Us'];
+    return view('shop' /* compact() */);
+});
